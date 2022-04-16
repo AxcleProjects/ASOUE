@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+body {
+    background-image: url("../images/1082458-free-download-damask-desktop-wallpaper-1920x1200-for-ipad-pro.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'IM Fell English', serif;
+}
+
+.container {
+    padding: 10px;
+}
+
+.container>.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.seasontitle {
+    color: goldenrod;
+    text-align: center;
+}
+
+video:focus {
+    outline: none;
+}
+
+.seasonsynopsis {
+    font-size: 17px;
+    color: goldenrod;
+    text-align: center;
+}
+
+.season1vid {
+    margin: 5px auto;
+    padding: 10px;
+    width: 90%;
+}
+
+video {
+    width: 100%;
+}
+
+.season1-gallery {
+    margin: 5px auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.figurehover {
+    padding: 5px;
+}
+
+figure {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 5px;
+    text-align: justify;
+}
+
+img {
+    width: 365px;
+    height: 205px;
+}
+
+
+/* imghvr-shutter-in-*
+   ----------------------------- */
+
+[class^='imghvr-shutter-in-']:after,
+[class^='imghvr-shutter-in-']:before,
+[class*=' imghvr-shutter-in-']:after,
+[class*=' imghvr-shutter-in-']:before {
+    background: linear-gradient(to top, #7AADA0 0%, #7198A9 50%, #AAA983 100%);
+    position: absolute;
+    content: '';
+}
+
+[class^='imghvr-shutter-in-']:after,
+[class*=' imghvr-shutter-in-']:after {
+    top: 0;
+    left: 0;
+}
+
+[class^='imghvr-shutter-in-']:before,
+[class*=' imghvr-shutter-in-']:before {
+    right: 0;
+    bottom: 0;
+}
+
+[class^='imghvr-shutter-in-'] figcaption,
+[class*=' imghvr-shutter-in-'] figcaption {
+    opacity: 0;
+    z-index: 1;
+}
+
+[class^='imghvr-shutter-in-']:hover figcaption,
+[class*=' imghvr-shutter-in-']:hover figcaption {
+    opacity: 1;
+    transition-delay: 0.21s;
+}
+
+
+/* imghvr-shutter-in-out-diag-2
+   ----------------------------- */
+
+.imghvr-shutter-in-out-diag-2:after,
+.imghvr-shutter-in-out-diag-2:before {
+    width: 200%;
+    height: 200%;
+    transition: all 0.6s ease;
+    opacity: 0.75;
+}
+
+.imghvr-shutter-in-out-diag-2:after {
+    -webkit-transform: skew(45deg) translateX(-100%);
+    transform: skew(45deg) translateX(-100%);
+}
+
+.imghvr-shutter-in-out-diag-2:before {
+    -webkit-transform: skew(45deg) translateX(100%);
+    transform: skew(45deg) translateX(100%);
+}
+
+.imghvr-shutter-in-out-diag-2:hover:after {
+    -webkit-transform: skew(45deg) translateX(0%);
+    transform: skew(45deg) translateX(0%);
+}
+
+.imghvr-shutter-in-out-diag-2:hover:before {
+    -webkit-transform: skew(45deg) translateX(0%);
+    transform: skew(45deg) translateX(0%);
+}
+
+
+/* FIGCAPTION */
+
+[class^='imghvr-'],
+[class*=' imghvr-'] {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    max-width: 100%;
+    background-color: gray;
+    /*border color*/
+    color: #fff;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+[class^='imghvr-']>img,
+[class*=' imghvr-']>img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+[class^='imghvr-'] figcaption,
+[class*=' imghvr-'] figcaption {
+    background: linear-gradient(to bottom, #7AADA0 0%, #7198A9 50%, #AAA983 100%);
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: black;
+}
+
+[class^='imghvr-'] figcaption h1,
+[class^='imghvr-'] figcaption h2,
+[class^='imghvr-'] figcaption h3,
+[class^='imghvr-'] figcaption h4,
+[class^='imghvr-'] figcaption h5,
+[class^='imghvr-'] figcaption h6,
+[class*=' imghvr-'] figcaption h1,
+[class*=' imghvr-'] figcaption h2,
+[class*=' imghvr-'] figcaption h3,
+[class*=' imghvr-'] figcaption h4,
+[class*=' imghvr-'] figcaption h5,
+[class*=' imghvr-'] figcaption h6 {
+    color: black
+}
+
+[class^='imghvr-'] a,
+[class*=' imghvr-'] a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+[class^='imghvr-'],
+[class*=' imghvr-'],
+[class^='imghvr-']:before,
+[class^='imghvr-']:after,
+[class*=' imghvr-']:before,
+[class*=' imghvr-']:after,
+[class^='imghvr-'] *,
+[class*=' imghvr-'] *,
+[class^='imghvr-'] *:before,
+[class^='imghvr-'] *:after,
+[class*=' imghvr-'] *:before,
+[class*=' imghvr-'] *:after {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

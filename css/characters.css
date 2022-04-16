@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+body {
+    background-image: url("../images/304265.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'IM Fell English', serif;
+}
+
+.container {
+    padding: 10px;
+}
+
+.container>.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.gallery {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 15px;
+    color: rgb(47, 128, 235);
+}
+
+.gallery>img {
+    width: 100%;
+    transition: all linear 0.3s;
+    border: 5px solid aqua;
+    border-radius: 200px;
+}
+
+img.hover_image {
+    position: absolute;
+    border: 5px solid chocolate;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.gallery:hover img {
+    opacity: 0;
+}
+
+.gallery:hover img.hover_image {
+    opacity: 1;
+}
+
+.main figure {
+    text-align: center;
+    margin: auto;
+}
+
+.main {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgba(115, 115, 115, 0.5);
+    display: flex;
+    border-radius: 75px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.recurring {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgba(115, 115, 115, 0.5);
+    border-radius: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.s1 {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgba(115, 115, 115, 0.5);
+    border-radius: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.s2 {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgba(115, 115, 115, 0.5);
+    border-radius: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.s3 {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgba(115, 115, 115, 0.5);
+    border-radius: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h2 {
+    color: goldenrod;
+    text-align: center;
+}
+
+
+/*hover effect*/
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+body {
+    background-image: url("../images/y6zX0K.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    padding: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'IM Fell English', serif;
+}
+
+.container {
+    padding: 10px;
+}
+
+.container>.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.content {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+}
+
+.loginbox {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 420px;
+    box-sizing: border-box;
+    background: linear-gradient(to top, #7AADA0 0%, #7198A9 50%, #AAA983 100%);
+    padding: 80px 40px;
+}
+
+button {
+    font-size: large;
+}
+
+h2 {
+    padding: 0 0 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.loginbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox p {
+    margin: 0;
+    padding: 0;
+}
+
+.loginbox input[type="text"],
+.loginbox input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+}
+
+.loginbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.loginbox input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #3366ff 0%, #33ccff 100%);
+}
+
+ ::placeholder {
+    color: rgba(255, 255, 255, .8);
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+/****************************************MENU BAR**************************************************/
+.menu{
+  padding: 5px;
+}
+
+*{
+  justify-content: center;
+  font-family: 'IM Fell English', serif;
+}
+  ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    background: #e9e9e9;
+    font-family: 'IM Fell English', serif;
+    
+  }
+  ul li {
+    display: block;
+    position: relative;
+    float: left;
+    /* background: #e9e9e9; */
+  }
+  /* This hides the dropdowns */
+  li ul {
+    display: none;
+  }
+  ul li a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #000000;
+    
+  }
+  ul li a:hover, .dropdown:hover .dropdown-content{
+    background: linear-gradient(to bottom, #3366ff 0%, #33ccff 100%);
+  }
+  /* Display the dropdown */
+  li:hover > ul {
+    display: block; 
+    position: absolute;
+    z-index: 1;
+  }
+  /* Remove float from dropdown lists */
+  li:hover li {
+      float: none;
+  }
+  /* li:hover a {
+    background: #e9e9e9;
+  } */
+
+
+  li:hover li a:hover {
+    background: linear-gradient(to bottom, #cc66ff 0%, #66ccff 100%); /*dropdown content hover color*/
+  }
+  .main-navigation li ul li {
+    border-top: 0;
+  }
+  /* Displays second level dropdowns to the right of the first level dropdown */
+  ul ul ul {
+    left: 100%;
+    top: 0; 
+  }
+  
+  
+  /* Simple clearfix */
+  
+  ul:before,
+  ul:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+  }
+  
+  ul:after {
+      clear: both;
+  }
+
+/*search container*/
+  .menu .search-container {
+    float: right;
+  }
+  
+  .menu input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .menu .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu .search-container button:hover {
+    background: #ccc;
+  }
