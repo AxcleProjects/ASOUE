@@ -1,5 +1,5 @@
 {
-    "root": "index.html",
+    "root": "ASOUE/",
     "clean_urls": true,
     "https_only": true,
     "headers": {
