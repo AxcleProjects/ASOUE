@@ -1,2 +1,4 @@
 # ASOUE
-• this project is from my Web System Techs. subject on my 1st year college
+<p align="center">
+  <img src="https://github.com/AxcleProjects/ASOUE/blob/main/images/logo2.png" alt="drawing" width="500px" alt="Comet of Words"/>
+</p>
